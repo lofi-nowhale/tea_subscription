@@ -186,6 +186,18 @@
           null
         ]
       },
+      "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/spec/factories/customers.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null
+        ]
+      },
       "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/spec/factories/subscriptions.rb": {
         "lines": [
           1,
@@ -225,7 +237,41 @@
           1,
           1,
           1,
+          1,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/app/models/customer.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/spec/models/subscription_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          2,
+          1,
+          1,
           null,
           null
         ]
@@ -236,13 +282,6 @@
           1,
           1,
           null,
-          1,
-          null
-        ]
-      },
-      "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/app/models/application_record.rb": {
-        "lines": [
-          1,
           1,
           null
         ]
@@ -272,6 +311,44 @@
           1,
           null,
           1,
+          null
+        ]
+      },
+      "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/spec/requests/api/v1/customer_request_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null,
           null
         ]
       },
@@ -348,7 +425,7 @@
           null
         ]
       },
-      "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/app/controllers/api/v1/subscriptions_controller.rb": {
+      "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/app/controllers/api/v1/customers_controller.rb": {
         "lines": [
           1,
           1,
@@ -363,6 +440,15 @@
           null
         ]
       },
+      "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/app/controllers/api/v1/subscriptions_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/noellehemphill/turing_work/4mod/intermission/tea_subscription/tea_subscription_api/app/controllers/api/v1/teas_controller.rb": {
         "lines": [
           1,
@@ -373,6 +459,6 @@
         ]
       }
     },
-    "timestamp": 1700861406
+    "timestamp": 1700865184
   }
 }
