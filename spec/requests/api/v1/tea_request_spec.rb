@@ -3,7 +3,8 @@ require 'rails_helper'
 RSpec.describe "Tea Api" do
   describe "index" do
     it "sends a list of tea" do
-      create_list(:tea, 3)
+      subscription1 = Subscription.create!(title: "The Green Bundle", price: 3999, frequency: 60 )
+      create_list(:tea, 3, subscription_id: subscription1.id)
 
       get '/api/v1/teas'
 
