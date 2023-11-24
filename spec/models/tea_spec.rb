@@ -7,4 +7,8 @@ RSpec.describe Tea, type: :model do
     it { should validate_numericality_of(:temperature)}
     it { should validate_numericality_of(:brew_time)}
   end
+
+  describe "relationships" do
+    it { should belong_to :subscription}
+  end
 end
