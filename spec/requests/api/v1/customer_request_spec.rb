@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Tea API" do
+RSpec.describe "Customer API" do
   describe "index" do
     it "sends a list of customers" do
       create_list(:customer, 3)

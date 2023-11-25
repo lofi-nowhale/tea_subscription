@@ -13,6 +13,7 @@ Rails.application.routes.draw do
       resources :teas, only: [:index]
       resources :subscriptions, only: [:index]
       resources :customers, only: [:index]
+      resources :customer_subscriptions, only: [:create]
     end
   end
 end
