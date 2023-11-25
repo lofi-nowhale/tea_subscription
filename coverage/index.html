@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-24T19:43:27-07:00">2023-11-24T19:43:27-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2023-11-24T20:06:23-07:00">2023-11-24T20:06:23-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  100.0%
+  99.56%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.41
+         1.46
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>214</b> relevant lines,
-    <span class="green"><b>214</b> lines covered</span> and
-    <span class="red"><b>0</b> lines missed. </span>
+    <b>229</b> relevant lines,
+    <span class="green"><b>228</b> lines covered</span> and
+    <span class="red"><b>1</b> lines missed. </span>
     (<span class="green">
-  100.0%
+  99.56%
 </span>
 )
   </div>
@@ -72,12 +72,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#20481a81887f0bafd9bbe68d7f675d664324acb8" class="src_link" title="app/controllers/api/v1/customer_subscriptions_controller.rb">app/controllers/api/v1/customer_subscriptions_controller.rb</a></td>
-            <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">10</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">6</td>
-            <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="yellow strong cell--number t-file__coverage">87.50 %</td>
+            <td class="cell--number">15</td>
+            <td class="cell--number">8</td>
+            <td class="cell--number">7</td>
+            <td class="cell--number">1</td>
+            <td class="cell--number">0.88</td>
             
           </tr>
         
@@ -297,7 +297,7 @@
             <td class="cell--number">6</td>
             <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">9.00</td>
+            <td class="cell--number">12.00</td>
             
           </tr>
         
@@ -348,9 +348,9 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#2c184566eaf2876e75633b43487fe2ba0e4f8ab4" class="src_link" title="spec/requests/api/v1/customer_subscriptions_request_spec.rb">spec/requests/api/v1/customer_subscriptions_request_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">44</td>
-            <td class="cell--number">24</td>
-            <td class="cell--number">24</td>
+            <td class="cell--number">70</td>
+            <td class="cell--number">37</td>
+            <td class="cell--number">37</td>
             <td class="cell--number">0</td>
             <td class="cell--number">1.00</td>
             
@@ -399,8 +399,8 @@
   <div class="header">
     <h3>app/controllers/api/v1/customer_subscriptions_controller.rb</h3>
     <h4>
-      <span class="green">
-  100.0%
+      <span class="yellow">
+  87.5%
 </span>
 
       lines covered
@@ -409,9 +409,9 @@
     
 
     <div class="t-line-summary">
-      <b>6</b> relevant lines.
-      <span class="green"><b>6</b> lines covered</span> and
-      <span class="red"><b>0</b> lines missed.</span>
+      <b>8</b> relevant lines.
+      <span class="green"><b>7</b> lines covered</span> and
+      <span class="red"><b>1</b> lines missed.</span>
     </div>
 
     
@@ -483,29 +483,29 @@
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">  def update</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="7">
-            <span class="hits">1</span>
+          <li class="missed" data-hits="0" data-linenumber="7">
+            
             
 
             
 
-            <code class="ruby">  def subscription_params</code>
+            <code class="ruby">    binding.pry</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="8">
+            
             
 
             
 
-            <code class="ruby">    params.permit(:customer_id, :subscription_id, :status)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -522,6 +522,61 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="10">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="11">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  private</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="12">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def subscription_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    params.permit(:customer_id, :subscription_id, :status)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -3496,7 +3551,7 @@
 
             
 
-            <code class="ruby">      resources :customer_subscriptions, only: [:create]</code>
+            <code class="ruby">      resources :customer_subscriptions, only: [:create, :put]</code>
           </li>
         </div>
       
@@ -3825,8 +3880,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="16" data-linenumber="4">
-            <span class="hits">16</span>
+          <li class="covered" data-hits="22" data-linenumber="4">
+            <span class="hits">22</span>
             
 
             
@@ -3836,8 +3891,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="16" data-linenumber="5">
-            <span class="hits">16</span>
+          <li class="covered" data-hits="22" data-linenumber="5">
+            <span class="hits">22</span>
             
 
             
@@ -3847,8 +3902,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="16" data-linenumber="6">
-            <span class="hits">16</span>
+          <li class="covered" data-hits="22" data-linenumber="6">
+            <span class="hits">22</span>
             
 
             
@@ -4869,8 +4924,8 @@
     
 
     <div class="t-line-summary">
-      <b>24</b> relevant lines.
-      <span class="green"><b>24</b> lines covered</span> and
+      <b>37</b> relevant lines.
+      <span class="green"><b>37</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -4921,7 +4976,7 @@
 
             
 
-            <code class="ruby">  describe &quot;index&quot; do</code>
+            <code class="ruby">  describe &quot;create&quot; do</code>
           </li>
         </div>
       
@@ -5350,12 +5405,298 @@
 
             
 
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;#patch&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="45">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;can update a customer subscription from active to &#39;inactive&#39;&quot; do</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="46">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      customer_1 = Customer.create!(first_name: &quot;Frodo&quot;, last_name: &quot;Baggins&quot;, email: &quot;theshire@test.com&quot;, address: &quot;Bag End, The Shire&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="47">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="48">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      subscription_1 = Subscription.create!(title: &quot;Green Tea Bundle&quot;, price: 4999, frequency: 30)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="49">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      subscription_2 = Subscription.create!(title: &quot;Black Tea Bundle&quot;, price: 4999, frequency: 60)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="50">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      subscription_3 = Subscription.create!(title: &quot;Herbal Tea Bundle&quot;, price: 3999, frequency: 30)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="51">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      create_list(:tea, 3, title: Faker::Tea.variety(type: &#39;Green&#39;), subscription_id: subscription_1.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="53">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      create_list(:tea, 3, title: Faker::Tea.variety(type: &#39;Black&#39;), subscription_id: subscription_2.id)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="54">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="55">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      new_sub1 = CustomerSubscription.create!(customer_id: customer_1.id, subscription_id: subscription_1.id, status: &quot;active&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="56">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      new_sub2 = CustomerSubscription.create!(customer_id: customer_1.id, subscription_id: subscription_2.id, status: &quot;active&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="57">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="58">
+            
+            
+
+            
+
+            <code class="ruby">      sub2_update = {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="59">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">        customer_id: customer_1.id, </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="60">
+            
+            
+
+            
+
+            <code class="ruby">        subscription_id: subscription_2.id, </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby">        status: &quot;inactive&quot;</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="62">
+            
+            
+
+            
+
+            <code class="ruby">      }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="63">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      put &quot;/api/v1/customer_subscriptions&quot;, params: sub2_update</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="65">
+            
+            
+
+            
+
+            <code class="ruby">      </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      expect(response).to be_successful</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="68">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="69">
+            
+            
+
+            
+
             <code class="ruby">end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="44">
+          <li class="never" data-hits="" data-linenumber="70">
             
             
 

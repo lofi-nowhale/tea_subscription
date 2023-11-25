@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe "CustomerSubscription API" do
-  describe "index" do
+  describe "create" do
     it "can create a CustomerSubscription" do
       customer_1 = Customer.create!(first_name: "Frodo", last_name: "Baggins", email: "theshire@test.com", address: "Bag End, The Shire")
       
@@ -38,6 +38,32 @@ RSpec.describe "CustomerSubscription API" do
 
       expect(new_subscription).to have_key(:status)
       expect(new_subscription[:status]).to be_a(String)
+    end
+  end
+
+  describe "#patch" do
+    it "can update a customer subscription from active to 'inactive'" do
+      customer_1 = Customer.create!(first_name: "Frodo", last_name: "Baggins", email: "theshire@test.com", address: "Bag End, The Shire")
+      
+      subscription_1 = Subscription.create!(title: "Green Tea Bundle", price: 4999, frequency: 30)
+      subscription_2 = Subscription.create!(title: "Black Tea Bundle", price: 4999, frequency: 60)
+      subscription_3 = Subscription.create!(title: "Herbal Tea Bundle", price: 3999, frequency: 30)
+
+      create_list(:tea, 3, title: Faker::Tea.variety(type: 'Green'), subscription_id: subscription_1.id)
+      create_list(:tea, 3, title: Faker::Tea.variety(type: 'Black'), subscription_id: subscription_2.id)
+
+      new_sub1 = CustomerSubscription.create!(customer_id: customer_1.id, subscription_id: subscription_1.id, status: "active")
+      new_sub2 = CustomerSubscription.create!(customer_id: customer_1.id, subscription_id: subscription_2.id, status: "active")
+
+      sub2_update = {
+        customer_id: customer_1.id, 
+        subscription_id: subscription_2.id, 
+        status: "inactive"
+      }
+
+      patch "/api/v1/customer_subscriptions", params: sub2_update
+      
+      expect(response).to be_successful
     end
   end
 end
