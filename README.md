@@ -24,7 +24,7 @@ When branching on this repo please use the conventions of `userstory#_name_featu
 ```
 1. Fork and Clone
 2. $ bundle install
-3. $ rails db:create
+3. $ rails db:{drop,create,migrate,seed}
 ```
 
 ## Database visualization
